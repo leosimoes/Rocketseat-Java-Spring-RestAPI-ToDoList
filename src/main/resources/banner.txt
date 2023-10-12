@@ -6,4 +6,6 @@
 | _| `._____| \______/   \______||__|\__\ |_______|    |__|    |_______/    |_______/__/     \__\  |__|
 
 ${application.title} ${application.version}
+Author: ${application.author}
 Powered by Spring Boot ${spring-boot.version}
+
