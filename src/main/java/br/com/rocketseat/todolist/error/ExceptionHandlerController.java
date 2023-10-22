@@ -33,6 +33,11 @@ public class ExceptionHandlerController {
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
     }
 
+    @ExceptionHandler(UnauthenticatedUserException.class)
+    public ResponseEntity<String> handleUnauthenticatedUserException(UnauthenticatedUserException e) {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleGenericException(Exception e) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal server error:" + e.getMessage());
