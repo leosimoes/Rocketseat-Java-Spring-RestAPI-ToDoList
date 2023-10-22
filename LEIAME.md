@@ -20,7 +20,7 @@ A autenticação é passada como parâmetro `credentials` no Header com valor `u
 
 ![Schema](imgs/Swagger-ui-api-schema.jpg)
 
-Para acessar o banco de dados 2:
+Para acessar o banco de dados h2:
 - http://localhost:8080/h2
 - login: `admin`;
 - senha: `admin`.
